@@ -10,7 +10,7 @@ class ConditionResultItem {
             value: "",
             operator: "",
             dynamicName: "",
-            type: "DYNAMIC" // DYNAMIC, STATIC
+            type: "" // DYNAMIC, STATIC
         }, result);
     }
 

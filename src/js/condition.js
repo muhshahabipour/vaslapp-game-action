@@ -322,7 +322,12 @@ export default condition;
 //         }],
 //         results: [{
 //             variable: "$RP_5b964b342ced29000745650a",
-//             dynamicName: "eric",
+//             dynamicName: "",
+//             operator: "-="
+//         },
+//         {
+//             variable: "$RP_5b964b342ced29000745650a",
+//             value: "10",
 //             operator: "-="
 //         }],
 //         features: [{
