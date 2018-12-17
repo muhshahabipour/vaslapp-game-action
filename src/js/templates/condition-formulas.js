@@ -28,7 +28,7 @@
                                     <div class="form-select">
                                         <select class="form-entry ltr" name="conditions[${i}].formulas[${j}].operator" id="formulas-operator-${obj.id}" data-id="${obj.id}" data-type="formula" data-name="operator">
                                             <option value="">یک متغیر را انتخاب کنید</option>
-                                            ${typeof options.operators !== "undefined" ? options.operators.map(oobj => `<option value="${oobj}" ${obj.operator == oobj ? `selected="selected"`: ``}>${oobj}</option>`).join('') : ``}
+                                            ${typeof options.operators !== "undefined" ? options.operators.map(oobj => `<option value="${oobj === "+=" ? `${encodeURIComponent(oobj)}` : `${oobj}`}" ${obj.operator == oobj ? `selected="selected"`: ``}>${oobj}</option>`).join('') : ``}
                                         </select>
                                     </div>
                                 </div>
