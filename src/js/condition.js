@@ -156,16 +156,16 @@ var condition = (function () {
         $('.action-condition-wrapper').html("");
         var list = conditionsList.getList();
 
-        
+
 
         if (list.length) {
             var rendered = getConditionTemplate(options, list);
             $('.action-condition-wrapper').append(rendered);
         } else {
             var emptySection = getEmptyTemplate();
-            $('.action-condition-wrapper').append(emptySection);    
+            $('.action-condition-wrapper').append(emptySection);
         }
-        
+
 
         deleteEventListener();
         addSubItemEventListener();
@@ -322,12 +322,11 @@ export default condition;
 //         }],
 //         results: [{
 //             variable: "$RP_5b964b342ced29000745650a",
-//             dynamicName: "",
-//             operator: "-="
-//         },
-//         {
-//             variable: "$RP_5b964b342ced29000745650a",
 //             value: "10",
+//             operator: "-="
+//         }, {
+//             variable: "$RP_5b964b342ced29000745650a",
+//             dynamicName: "eric",
 //             operator: "-="
 //         }],
 //         features: [{
