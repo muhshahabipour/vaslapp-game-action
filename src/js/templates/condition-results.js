@@ -44,7 +44,7 @@ export const getResultsTemplate = (id, i, data, options) => {
                                     <div class="form-select">
                                         <select class="form-entry ltr" name="conditions[${i}].results[${j}].operator" id="results-operator-${obj.id}" data-id="${obj.id}" data-type="result" data-name="operator">
                                             <option value="">یک متغیر را انتخاب کنید</option>
-                                            ${typeof options.assignments !== "undefined" ? options.assignments.map(oobj => `<option value="${oobj == "+=" ? `${encodeURIComponent(oobj)}` : `${oobj}`}" ${obj.operator == (oobj == "+=" ? encodeURIComponent(oobj) : oobj) ? `selected="selected"`: ``}>${oobj}</option>`).join('') : ``}
+                                            ${typeof options.assignments !== "undefined" ? options.assignments.map(oobj => `<option value="${oobj == "+=" ? `${encodeURIComponent(oobj)}` : `${oobj}`}" ${(obj.operator == "+=" ? encodeURIComponent(obj.operator) : obj.operator) == (oobj == "+=" ? encodeURIComponent(oobj) : oobj) ? `selected="selected"`: ``}>${oobj}</option>`).join('') : ``}
                                         </select>
                                     </div>
                                 </div>

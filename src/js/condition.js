@@ -200,138 +200,138 @@ export default condition;
 
 
 
-// var a = {
-//     variable: [{
-//         name: "$LEVEL_5b5c12b78201b400064f27ca",
-//         title: "سطح - سطح امتیاز بازی"
-//     }, {
-//         name: "$LEVEL_5b964be12ced29000745650b",
-//         title: "سطح - قهرمانان"
-//     }, {
-//         name: "$LEVEL_5b975a4c3b2d8d00079378be",
-//         title: "سطح - lgxpGroups"
-//     }, {
-//         name: "$LEVEL_5b98a1c63b2d8d00079378c4",
-//         title: "سطح - سطح 1"
-//     }, {
-//         name: "$XP_5b5d9f446009270007434167",
-//         title: "امتیازبندی بازی"
-//     }, {
-//         name: "$RP_5b964b342ced29000745650a",
-//         title: "gem"
-//     }, {
-//         name: "$XP_5b975a273b2d8d00079378bd",
-//         title: "lgXP"
-//     }, {
-//         name: "$XP_5ba61de2e0371700066d45df",
-//         title: "gem"
-//     }, {
-//         name: "$RP_5bb1e81eb6addd0007d9cb85",
-//         title: "exir"
-//     }, {
-//         name: "$XP_5bb8b8998fcc2c000747e41e",
-//         title: "Overal"
-//     }, {
-//         name: "$XP_5bb9a2308fcc2c000747e41f",
-//         title: "inc10points"
-//     }, {
-//         name: "$RP_5bbddfe5f8b38c00077a9c68",
-//         title: "gem"
-//     }, {
-//         name: "$XP_5bbde09df8b38c00077a9c69",
-//         title: "question xp point"
-//     }, {
-//         name: "$XP_5bc5891418be4900060becc3",
-//         title: "fee"
-//     }],
-//     features: [{
-//         id: "5b5c12a18201b400064f27c9",
-//         title: "پیکان"
-//     }, {
-//         id: "5b5d9ffb600927000743416b",
-//         title: "دوچرخه"
-//     }, {
-//         id: "5b975e673b2d8d00079378c2",
-//         title: "مدال طلا"
-//     }],
-//     operators: [">", ">=", "<", "<=", "==", "!="],
-//     assignments: ["=","+=","-=","*=","/=","%="],
-//     featureAssignments: ["="],
-//     levels: [
-//         {
-//           "id": "$LEVEL_5b5c12db8201b400064f27cc",
-//           "title": "سطح بازی 1",
-//           "levelcat": "5b5c12b78201b400064f27ca"
-//         },
-//         {
-//           "id": "$LEVEL_5b5c12eb8201b400064f27cd",
-//           "title": "سطح بازی 2",
-//           "levelcat": "5b5c12b78201b400064f27ca"
-//         },
-//         {
-//           "id": "$LEVEL_5b5c16888201b400064f27ce",
-//           "title": "سطح 3",
-//           "levelcat": "5b5c12b78201b400064f27ca"
-//         },
-//         {
-//           "id": "$LEVEL_5b964c652ced29000745650c",
-//           "title": "سطح یک قهرمانان",
-//           "levelcat": "5b964be12ced29000745650b"
-//         },
-//         {
-//           "id": "$LEVEL_5b975a623b2d8d00079378bf",
-//           "title": "lgxp1",
-//           "levelcat": "5b975a4c3b2d8d00079378be"
-//         },
-//         {
-//           "id": "$LEVEL_5b975a733b2d8d00079378c0",
-//           "title": "lgxp2",
-//           "levelcat": "5b975a4c3b2d8d00079378be"
-//         },
-//         {
-//           "id": "$LEVEL_5b964d842ced29000745650d",
-//           "title": "سطح 2 قهرمانان",
-//           "levelcat": "5b964be12ced29000745650b"
-//         },
-//         {
-//           "id": "$LEVEL_5b964d9e2ced29000745650e",
-//           "title": "سطح 3 قهرمانان",
-//           "levelcat": "5b964be12ced29000745650b"
-//         }
-//       ]
-// }
+var a = {
+    variable: [{
+        name: "$LEVEL_5b5c12b78201b400064f27ca",
+        title: "سطح - سطح امتیاز بازی"
+    }, {
+        name: "$LEVEL_5b964be12ced29000745650b",
+        title: "سطح - قهرمانان"
+    }, {
+        name: "$LEVEL_5b975a4c3b2d8d00079378be",
+        title: "سطح - lgxpGroups"
+    }, {
+        name: "$LEVEL_5b98a1c63b2d8d00079378c4",
+        title: "سطح - سطح 1"
+    }, {
+        name: "$XP_5b5d9f446009270007434167",
+        title: "امتیازبندی بازی"
+    }, {
+        name: "$RP_5b964b342ced29000745650a",
+        title: "gem"
+    }, {
+        name: "$XP_5b975a273b2d8d00079378bd",
+        title: "lgXP"
+    }, {
+        name: "$XP_5ba61de2e0371700066d45df",
+        title: "gem"
+    }, {
+        name: "$RP_5bb1e81eb6addd0007d9cb85",
+        title: "exir"
+    }, {
+        name: "$XP_5bb8b8998fcc2c000747e41e",
+        title: "Overal"
+    }, {
+        name: "$XP_5bb9a2308fcc2c000747e41f",
+        title: "inc10points"
+    }, {
+        name: "$RP_5bbddfe5f8b38c00077a9c68",
+        title: "gem"
+    }, {
+        name: "$XP_5bbde09df8b38c00077a9c69",
+        title: "question xp point"
+    }, {
+        name: "$XP_5bc5891418be4900060becc3",
+        title: "fee"
+    }],
+    features: [{
+        id: "5b5c12a18201b400064f27c9",
+        title: "پیکان"
+    }, {
+        id: "5b5d9ffb600927000743416b",
+        title: "دوچرخه"
+    }, {
+        id: "5b975e673b2d8d00079378c2",
+        title: "مدال طلا"
+    }],
+    operators: [">", ">=", "<", "<=", "==", "!="],
+    assignments: ["=","+=","-=","*=","/=","%="],
+    featureAssignments: ["="],
+    levels: [
+        {
+          "id": "$LEVEL_5b5c12db8201b400064f27cc",
+          "title": "سطح بازی 1",
+          "levelcat": "5b5c12b78201b400064f27ca"
+        },
+        {
+          "id": "$LEVEL_5b5c12eb8201b400064f27cd",
+          "title": "سطح بازی 2",
+          "levelcat": "5b5c12b78201b400064f27ca"
+        },
+        {
+          "id": "$LEVEL_5b5c16888201b400064f27ce",
+          "title": "سطح 3",
+          "levelcat": "5b5c12b78201b400064f27ca"
+        },
+        {
+          "id": "$LEVEL_5b964c652ced29000745650c",
+          "title": "سطح یک قهرمانان",
+          "levelcat": "5b964be12ced29000745650b"
+        },
+        {
+          "id": "$LEVEL_5b975a623b2d8d00079378bf",
+          "title": "lgxp1",
+          "levelcat": "5b975a4c3b2d8d00079378be"
+        },
+        {
+          "id": "$LEVEL_5b975a733b2d8d00079378c0",
+          "title": "lgxp2",
+          "levelcat": "5b975a4c3b2d8d00079378be"
+        },
+        {
+          "id": "$LEVEL_5b964d842ced29000745650d",
+          "title": "سطح 2 قهرمانان",
+          "levelcat": "5b964be12ced29000745650b"
+        },
+        {
+          "id": "$LEVEL_5b964d9e2ced29000745650e",
+          "title": "سطح 3 قهرمانان",
+          "levelcat": "5b964be12ced29000745650b"
+        }
+      ]
+}
 
-// condition.setOptions(a);
+condition.setOptions(a);
 
-// var b = {
-//     title: "name",
-//     conditions: [{
-//         nextAction: "fgdfgdhgdhfg",
-//         formulas: [{
-//             x: "$LEVEL_5b964be12ced29000745650b",
-//             operator: ">=",
-//             y: "$LEVEL_5b964c652ced29000745650c"
-//         }],
-//         results: [{
-//             variable: "$RP_5b964b342ced29000745650a",
-//             value: "10",
-//             operator: "-="
-//         }, {
-//             variable: "$RP_5b964b342ced29000745650a",
-//             dynamicName: "eric",
-//             operator: "-="
-//         }],
-//         features: [{
-//             value: "2",
-//             featureId: "5b5d9ffb600927000743416b",
-//             operator: "="
-//         }, {
-//             value: "3",
-//             featureId: "5b975e673b2d8d00079378c2",
-//             operator: "="
-//         }]
-//     }]
-// }
+var b = {
+    title: "name",
+    conditions: [{
+        nextAction: "fgdfgdhgdhfg",
+        formulas: [{
+            x: "$LEVEL_5b964be12ced29000745650b",
+            operator: ">=",
+            y: "$LEVEL_5b964c652ced29000745650c"
+        }],
+        results: [{
+            variable: "$RP_5b964b342ced29000745650a",
+            value: "10",
+            operator: "+="
+        }, {
+            variable: "$RP_5b964b342ced29000745650a",
+            dynamicName: "eric",
+            operator: "-="
+        }],
+        features: [{
+            value: "2",
+            featureId: "5b5d9ffb600927000743416b",
+            operator: "="
+        }, {
+            value: "3",
+            featureId: "5b975e673b2d8d00079378c2",
+            operator: "="
+        }]
+    }]
+}
 
 
-// condition.setData(b.conditions)
+condition.setData(b.conditions)
