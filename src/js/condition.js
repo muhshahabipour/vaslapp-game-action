@@ -4,18 +4,10 @@ import $ from "jquery";
 import notie from "notie";
 import ConditionsList from "./condition/list/conditionsList";
 import ConditionItem from "./condition/item/conditionItem";
-import {
-    getEmptyTemplate
-} from "./templates/condition-empty";
-import {
-    getAddConditionTemplate
-} from "./templates/condition-add-button";
-import {
-    getConditionWrapperTemplate
-} from "./templates/condition-wrapper";
-import {
-    getConditionTemplate
-} from "./templates/condition-item";
+import { getEmptyTemplate } from "./templates/condition-empty";
+import { getAddConditionTemplate } from "./templates/condition-add-button";
+import { getConditionWrapperTemplate } from "./templates/condition-wrapper";
+import { getConditionTemplate } from "./templates/condition-item";
 
 import "../scss/style.scss";
 
