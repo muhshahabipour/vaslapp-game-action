@@ -24,16 +24,16 @@ export const getResultsTemplate = (id, i, data, options) => {
                             <div class="col-xs-12 col-md-6 col-lg-4">
                                 <div class="form form-group">
                                     <label for="${obj.type === "DYNAMIC" ? `results-dynamicname-${obj.id}` : `results-value-${obj.id}`}">مقدار</label>
-
+                                    
                                     <div class="radio-inline no-padding">
-                                        <input type="radio" name="type-${obj.id}" id="type-dynamic-${obj.id}" value="DYNAMIC" ${obj.type === "DYNAMIC" ? `checked="checked"`: ``} data-id="${obj.id}" data-type="result" data-name="type"><label for="type-dynamic-${obj.id}">dynamic</label>
+                                        <input type="radio" name="type-${obj.id}" id="type-dynamic-${obj.id}" value="DYNAMIC" ${obj.type === "DYNAMIC" || (!obj.type.length && typeof obj.dynamicName === "string" && obj.dynamicName.length) || (!obj.dynamicName.length && !obj.value.length) ? `checked="checked"`: ``} data-id="${obj.id}" data-type="result" data-name="type"><label for="type-dynamic-${obj.id}">dynamic</label>
                                     </div>
                                     
                                     <div class="radio-inline">
-                                        <input type="radio" name="type-${obj.id}" id="type-static-${obj.id}" value="STATIC" ${obj.type === "STATIC" ? `checked="checked"`: ``} data-id="${obj.id}" data-type="result" data-name="type"><label for="type-static-${obj.id}">static</label>
+                                        <input type="radio" name="type-${obj.id}" id="type-static-${obj.id}" value="STATIC" ${obj.type === "STATIC" || (!obj.type.length && typeof obj.value === "string" && obj.value.length) ? `checked="checked"`: ``} data-id="${obj.id}" data-type="result" data-name="type"><label for="type-static-${obj.id}">static</label>
                                     </div>
                                     
-                                    ${obj.type === "DYNAMIC" ? `<input type="text" class="form-entry" name="conditions[${i}].results[${j}].dynamicName" id="results-dynamicname-${obj.id}" value="${obj.dynamicName}" data-id="${obj.id}" data-type="result" data-name="dynamicName">`: `<input type="text" class="form-entry" name="conditions[${i}].results[${j}].value" id="results-value-${obj.id}" value="${obj.value}" data-id="${obj.id}" data-type="result" data-name="value">`}
+                                    ${obj.type == "DYNAMIC" || (!obj.type.length && typeof obj.dynamicName === "string" && obj.dynamicName.length) || (!obj.dynamicName.length && !obj.value.length) ? `<input type="text" class="form-entry" name="conditions[${i}].results[${j}].dynamicName" id="results-dynamicname-${obj.id}" value="${obj.dynamicName}" data-id="${obj.id}" data-type="result" data-name="dynamicName">` : `<input type="text" class="form-entry" name="conditions[${i}].results[${j}].value" id="results-value-${obj.id}" value="${obj.value}" data-id="${obj.id}" data-type="result" data-name="value">`}
                                     
                                     
                                 </div>
@@ -44,7 +44,7 @@ export const getResultsTemplate = (id, i, data, options) => {
                                     <div class="form-select">
                                         <select class="form-entry ltr" name="conditions[${i}].results[${j}].operator" id="results-operator-${obj.id}" data-id="${obj.id}" data-type="result" data-name="operator">
                                             <option value="">یک متغیر را انتخاب کنید</option>
-                                            ${typeof options.assignments !== "undefined" ? options.assignments.map(oobj => `<option value="${oobj}" ${obj.operator == oobj ? `selected="selected"`: ``}>${oobj}</option>`).join('') : ``}
+                                            ${typeof options.assignments !== "undefined" ? options.assignments.map(oobj => `<option value="${oobj == "+=" ? `${encodeURIComponent(oobj)}` : `${oobj}`}" ${obj.operator == oobj ? `selected="selected"`: ``}>${oobj}</option>`).join('') : ``}
                                         </select>
                                     </div>
                                 </div>
